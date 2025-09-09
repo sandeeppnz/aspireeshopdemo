@@ -14,6 +14,8 @@ var app = builder.Build();
 
 app.MapDefaultEndpoints();
 
+app.UseMigration();
+
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
 {
