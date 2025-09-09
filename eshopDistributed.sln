@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Aspire", "Aspire", "{99FEF489-B1B3-4FF1-B2F7-D34FE6A85E76}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Services", "Services", "{15286053-D041-4346-AE95-8907D5D046D4}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Frontend", "Frontend", "{4AFBD219-59DB-4049-B91F-A70235F697C3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AppHost", "AppHost\AppHost.csproj", "{C3C76AA3-910C-46B3-B77F-DFBFA2E4D70B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ServiceDefaults", "ServiceDefaults\ServiceDefaults.csproj", "{3D7A3018-4AC3-4AB2-ADD2-55840F368F2B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{C3C76AA3-910C-46B3-B77F-DFBFA2E4D70B} = {99FEF489-B1B3-4FF1-B2F7-D34FE6A85E76}
+		{3D7A3018-4AC3-4AB2-ADD2-55840F368F2B} = {99FEF489-B1B3-4FF1-B2F7-D34FE6A85E76}
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C3C76AA3-910C-46B3-B77F-DFBFA2E4D70B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C3C76AA3-910C-46B3-B77F-DFBFA2E4D70B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C3C76AA3-910C-46B3-B77F-DFBFA2E4D70B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C3C76AA3-910C-46B3-B77F-DFBFA2E4D70B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3D7A3018-4AC3-4AB2-ADD2-55840F368F2B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3D7A3018-4AC3-4AB2-ADD2-55840F368F2B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3D7A3018-4AC3-4AB2-ADD2-55840F368F2B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3D7A3018-4AC3-4AB2-ADD2-55840F368F2B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
