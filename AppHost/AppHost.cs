@@ -16,12 +16,13 @@ var redisCache = builder.AddRedis("cache")
     .WithLifetime(ContainerLifetime.Persistent);
 
 // Projects
-var catalog = builder.AddProject<Projects.Catalog>("catalog")
+var catalogService = builder.AddProject<Projects.Catalog>("catalog")
     .WithReference(catalogDb)
     .WaitFor(catalogDb);
 
-var basket = builder.AddProject<Projects.Basket>("basket")
+var basketService = builder.AddProject<Projects.Basket>("basket")
     .WithReference(redisCache)
+    .WithReference(catalogService)
     .WaitFor(redisCache);
 
 builder.Build().Run();
