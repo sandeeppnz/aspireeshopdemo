@@ -12,6 +12,7 @@ Accept: application/json
 
 POST {{Catalog_HostAddress}}/
 Content-Type: application/json
+
 {
     "id": 10,
     "name": "NEW Swn Flashlight",
@@ -24,6 +25,7 @@ Content-Type: application/json
 
 PUT {{Catalog_HostAddress}}/10
 Content-Type: application/json
+
 {    
     "name": "UPDATED Swn Flashlight",
     "description": "An UPDATED swn product for outdoor enthusiasts",
