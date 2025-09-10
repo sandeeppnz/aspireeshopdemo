@@ -1,6 +1,7 @@
 using Catalog.Data;
 using Catalog.Endpoints;
 using Catalog.Services;
+using ServiceDefaults;
 
 var builder = WebApplication.CreateBuilder(args);
 

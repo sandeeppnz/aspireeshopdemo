@@ -9,6 +9,7 @@
 
     <ItemGroup>
         <FrameworkReference Include="Microsoft.AspNetCore.App"/>
+        <PackageReference Include="MassTransit.RabbitMQ" Version="8.5.3-develop.2364" />
 
         <PackageReference Include="Microsoft.Extensions.Http.Resilience" Version="9.7.0"/>
         <PackageReference Include="Microsoft.Extensions.ServiceDiscovery" Version="9.4.2"/>

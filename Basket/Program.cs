@@ -1,6 +1,7 @@
 using Basket.ApiClients;
 using Basket.Endpoints;
 using Basket.Services;
+using ServiceDefaults;
 
 var builder = WebApplication.CreateBuilder(args);
 
