@@ -23,13 +23,13 @@ Content-Type: application/json
 
 ###
 
-PUT {{Catalog_HostAddress}}/10
+PUT {{Catalog_HostAddress}}/1
 Content-Type: application/json
 
 {    
     "name": "UPDATED Swn Flashlight",
     "description": "An UPDATED swn product for outdoor enthusiasts",
-    "price": 19.99,
+    "price": 7.99,
     "imageUrl": "product10.png"
 }
 
