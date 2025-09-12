@@ -41,5 +41,13 @@ var basketService = builder.AddProject<Projects.Basket>("basket")
     .WaitFor(rabbitmq)
     .WaitFor(keycloak);
 
+var webapp = builder
+    .AddProject<Projects.WebApp>("webapp")
+    .WithExternalHttpEndpoints()
+    .WithReference(redisCache)
+    .WithReference(catalogService)    
+    .WithReference(basketService)
+    .WaitFor(catalogService)
+    .WaitFor(basketService);
 
 builder.Build().Run();

@@ -21,6 +21,7 @@
     <ItemGroup>
       <ProjectReference Include="..\Basket\Basket.csproj" />
       <ProjectReference Include="..\Catalog\Catalog.csproj" />
+      <ProjectReference Include="..\WebApp\WebApp.csproj" />
     </ItemGroup>
 
 </Project>
