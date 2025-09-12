@@ -21,7 +21,7 @@ var rabbitmq = builder.AddRabbitMQ("rabbitmq")
     .WithLifetime(ContainerLifetime.Persistent);
 
 var keycloak = builder
-    .AddKeycloak("keycloak", 8089)
+    .AddKeycloak("keycloak", 8080)
     // .WithDataVolume()
     .WithLifetime(ContainerLifetime.Persistent);
 
