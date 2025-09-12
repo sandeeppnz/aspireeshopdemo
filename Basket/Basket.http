@@ -1,11 +1,14 @@
 @Basket_HostAddress = https://localhost:7070/basket
+@accessToken = 
 
 GET {{Basket_HostAddress}}/swn
 Accept: application/json
+Authorization: Bearer {{accessToken}}
 
 ###
 
 POST {{Basket_HostAddress}}
+Authorization: Bearer {{accessToken}}
 Content-Type: application/json
 
 {
@@ -31,4 +34,13 @@ Content-Type: application/json
 ###
 
 DELETE {{Basket_HostAddress}}/swn
+Authorization: Bearer {{accessToken}}
 Content-Type: application/json
+
+###
+
+POST http://localhost:8089/realms/eshop/protocol/openid-connect/token
+Content-Type: application/x-www-form-urlencoded
+
+grant_type=password&client_id=eshop-client&scope=email openid&username=test&password=
+
