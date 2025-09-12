@@ -5,25 +5,33 @@ var builder = DistributedApplication.CreateBuilder(args);
 // Backing services
 var postgres = builder.AddPostgres("postgres")
     .WithPgAdmin()
-    .WithDataVolume()
+    // .WithDataVolume()
     .WithLifetime(ContainerLifetime.Persistent);
 
 var catalogDb = postgres.AddDatabase("catalogdb");
 
 var redisCache = builder.AddRedis("cache")
     .WithRedisInsight()
-    .WithDataVolume()
+    // .WithDataVolume()
     .WithLifetime(ContainerLifetime.Persistent);
 
 var rabbitmq = builder.AddRabbitMQ("rabbitmq")
     .WithManagementPlugin()
-    .WithDataVolume()
+    // .WithDataVolume()
     .WithLifetime(ContainerLifetime.Persistent);
 
 var keycloak = builder
     .AddKeycloak("keycloak", 8089)
-    .WithDataVolume()
+    // .WithDataVolume()
     .WithLifetime(ContainerLifetime.Persistent);
+
+if (builder.ExecutionContext.IsRunMode)
+{
+    postgres.WithDataVolume();
+    redisCache.WithDataVolume();
+    rabbitmq.WithDataVolume();
+    keycloak.WithDataVolume();   
+}
 
 // Projects
 var catalogService = builder.AddProject<Projects.Catalog>("catalog")
