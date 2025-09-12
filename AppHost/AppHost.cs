@@ -28,7 +28,7 @@ var keycloak = builder
 if (builder.ExecutionContext.IsRunMode)
 {
     postgres.WithDataVolume();
-    redisCache.WithDataVolume();
+    //redisCache.WithDataVolume();
     rabbitmq.WithDataVolume();
     keycloak.WithDataVolume();   
 }
