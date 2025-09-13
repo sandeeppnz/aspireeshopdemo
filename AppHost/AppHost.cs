@@ -58,4 +58,6 @@ var webapp = builder
     .WaitFor(catalogService)
     .WaitFor(basketService);
 
-builder.Build().Run();
+// Test
+
+// builder.Build().Run();
