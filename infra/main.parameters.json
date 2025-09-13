@@ -1,0 +1,28 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentParameters.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+      "principalId": {
+        "value": "${AZURE_PRINCIPAL_ID}"
+      },
+      "cache_password": {
+        "value": "${AZURE_CACHE_PASSWORD}"
+      },
+      "keycloak_password": {
+        "value": "${AZURE_KEYCLOAK_PASSWORD}"
+      },
+      "postgres_password": {
+        "value": "${AZURE_POSTGRES_PASSWORD}"
+      },
+      "rabbitmq_password": {
+        "value": "${AZURE_RABBITMQ_PASSWORD}"
+      },
+      "environmentName": {
+        "value": "${AZURE_ENV_NAME}"
+      },
+      "location": {
+        "value": "${AZURE_LOCATION}"
+      }
+    }
+  }
+  
