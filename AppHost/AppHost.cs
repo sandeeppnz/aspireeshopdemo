@@ -58,6 +58,5 @@ var webapp = builder
     .WaitFor(catalogService)
     .WaitFor(basketService);
 
-// Test
-
+// CICD https://www.youtube.com/watch?v=qWtRFNLPkmg
 builder.Build().Run();
