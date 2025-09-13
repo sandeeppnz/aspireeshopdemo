@@ -60,4 +60,4 @@ var webapp = builder
 
 // Test
 
-// builder.Build().Run();
+builder.Build().Run();
