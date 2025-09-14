@@ -12,6 +12,7 @@ builder.AddServiceDefaults();
 builder.AddNpgsqlDbContext<ProductDbContext>(connectionName: "catalogdb");
 
 builder.Services.AddScoped<ProductService>();
+builder.Services.AddScoped<ProductAiService>();
 
 builder.Services.AddMassTransitWithAssemblies(Assembly.GetExecutingAssembly());
 
