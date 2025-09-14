@@ -21,7 +21,7 @@ var rabbitmq = builder.AddRabbitMQ("rabbitmq")
     .WithLifetime(ContainerLifetime.Persistent);
 
 var keycloak = builder
-    .AddKeycloak("keycloak", 8080)
+    .AddKeycloak("keycloak", 8089)
     // .WithDataVolume()
     .WithLifetime(ContainerLifetime.Persistent);
 
@@ -33,12 +33,25 @@ if (builder.ExecutionContext.IsRunMode)
     keycloak.WithDataVolume();   
 }
 
+var ollama = builder
+    .AddOllama("ollama", 11434)
+    .WithDataVolume()
+    .WithLifetime(ContainerLifetime.Persistent)
+    .WithOpenWebUI();
+
+var llama = ollama.AddModel("llama3.2");
+var embedding = ollama.AddModel("mxbai-embed-large");
+
 // Projects
 var catalogService = builder.AddProject<Projects.Catalog>("catalog")
     .WithReference(catalogDb)
     .WithReference(rabbitmq)
+    .WithReference(llama)
+    .WithReference(embedding)
     .WaitFor(catalogDb)
-    .WaitFor(rabbitmq);
+    .WaitFor(rabbitmq)
+    .WaitFor(llama)
+    .WaitFor(embedding);;
 
 var basketService = builder.AddProject<Projects.Basket>("basket")
     .WithReference(redisCache)

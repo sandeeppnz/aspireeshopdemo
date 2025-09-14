@@ -18,6 +18,8 @@ builder.Services.AddMassTransitWithAssemblies(Assembly.GetExecutingAssembly());
 // Learn more about configuring OpenAPI at https://aka.ms/aspnet/openapi
 builder.Services.AddOpenApi();
 
+builder.AddOllamaSharpChatClient("ollama-llama3-2");
+
 var app = builder.Build();
 
 app.MapDefaultEndpoints();
