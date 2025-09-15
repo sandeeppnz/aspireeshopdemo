@@ -38,3 +38,7 @@ Content-Type: application/json
 DELETE {{Catalog_HostAddress}}/10
 Content-Type: application/json
 
+### Support AI
+
+GET {{Catalog_HostAddress}}/support/give-me-1-outdoor-activity
+Accept: application/json
