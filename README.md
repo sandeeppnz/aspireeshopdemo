@@ -1,4 +1,4 @@
-﻿# Web Application — ASP.NET Core + Blazor (NET 9) 🚀
+﻿# .NET Apsire + Azure Container Apps + Gen AI Application Demo 🚀
 
 [![.NET 9](https://img.shields.io/badge/.NET-9.0-512BD4?logo=dotnet&logoColor=white)](https://dotnet.microsoft.com/)
 [![C# 13](https://img.shields.io/badge/C%23-13.0-239120?logo=csharp&logoColor=white)](https://learn.microsoft.com/dotnet/csharp/)
@@ -7,19 +7,17 @@
 [![.NET Aspire](https://img.shields.io/badge/.NET%20Aspire-Cloud%20Native-512BD4?logo=dotnet&logoColor=white)](https://learn.microsoft.com/dotnet/aspire/overview)
 [![Azure Container Apps](https://img.shields.io/badge/Azure-Container%20Apps-0078D4?logo=microsoftazure&logoColor=white)](https://learn.microsoft.com/azure/container-apps/)
 
-A modern web application built on .NET 9 and ASP.NET Core using Razor and Blazor for interactive, server-rendered user experiences. The solution demonstrates clean separation of concerns, typed API integrations, and contemporary UI patterns with great performance via server-side interactivity and streaming rendering.
+Explore .NET Apsire, Azure Container Apps, and Gen AI with this demo application.
 
-## Typical Use Cases 🔎
+## Microservice Use Cases 🔎
 
 - Product discovery and search across a catalog
 - Filtering and paging of search results
 - Viewing detailed information for catalog entities
 - Integrating with backend APIs to fetch and display data in interactive UI
-- Server-rendered pages with dynamic interactions without full page reloads
 
 These use cases showcase:
 - Fast time-to-first-byte with server rendering
-- Rich interactions powered by Blazor components
 - Reliable service communication via typed API clients
 
 ## Semantic Search & AI Assistants 🤖
