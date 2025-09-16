@@ -1,4 +1,4 @@
-﻿# .NET Apsire + Azure Container Apps + Gen AI Application Demo 🚀
+﻿# .NET Aspire + Azure Container Apps + Gen AI Application Demo 🚀
 
 [![.NET 9](https://img.shields.io/badge/.NET-9.0-512BD4?logo=dotnet&logoColor=white)](https://dotnet.microsoft.com/)
 [![C# 13](https://img.shields.io/badge/C%23-13.0-239120?logo=csharp&logoColor=white)](https://learn.microsoft.com/dotnet/csharp/)
@@ -7,7 +7,7 @@
 [![.NET Aspire](https://img.shields.io/badge/.NET%20Aspire-Cloud%20Native-512BD4?logo=dotnet&logoColor=white)](https://learn.microsoft.com/dotnet/aspire/overview)
 [![Azure Container Apps](https://img.shields.io/badge/Azure-Container%20Apps-0078D4?logo=microsoftazure&logoColor=white)](https://learn.microsoft.com/azure/container-apps/)
 
-Explore .NET Apsire, Azure Container Apps, and Gen AI with this demo application.
+Explore .NET Aspire, Azure Container Apps, and Gen AI with this demo application.
 
 ## Microservice Use Cases 🔎
 
